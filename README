@@ -12,5 +12,5 @@ Examples:
   Encryption: xchacha20 key.hex nonce.hex < plaintext.txt > encrypted.bin
   Decryption: xchacha20 key.hex nonce.hex < encrypted.bin > decrypted.txt
 
-Note: The key should be 32 hex bytes long).
-      The nonce should be 24 hex bytes bytes).
+Note: The key should be 32 hex bytes (64 characters) long.
+      The nonce should be 24 hex bytes (48 characters) long.
