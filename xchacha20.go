@@ -69,12 +69,12 @@ func main() {
 	}
 
 	if len(key) != chacha20.KeySize {
-		fmt.Fprintf(os.Stderr, "Error: Invalid key size. Expected %d bytes (32 hex bytes), got %d bytes\n", chacha20.KeySize, len(key))
+		fmt.Fprintf(os.Stderr, "Error: Invalid key size. Expected %d hex bytes, got %d hex bytes\n", chacha20.KeySize, len(key))
 		os.Exit(1)
 	}
 
 	if len(nonce) != chacha20.NonceSizeX {
-		fmt.Fprintf(os.Stderr, "Error: Invalid nonce size. Expected %d bytes (24 hex bytes), got %d bytes\n", chacha20.NonceSizeX, len(nonce))
+		fmt.Fprintf(os.Stderr, "Error: Invalid nonce size. Expected %d hex bytes), got %d hex bytes\n", chacha20.NonceSizeX, len(nonce))
 		os.Exit(1)
 	}
 
