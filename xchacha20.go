@@ -41,8 +41,8 @@ Examples:
   Encryption: %s key.hex nonce.hex < plaintext.txt > encrypted.bin
   Decryption: %s key.hex nonce.hex < encrypted.bin > decrypted.txt
 
-Note: The key should be 64 hexadecimal characters long (32 bytes).
-      The nonce should be 48 hexadecimal characters long (24 bytes).
+Note: The key should be 32 hex bytes (64 characters) long.
+      The nonce should be 24 hex bytes (48 characters) long.
 `, os.Args[0], os.Args[0], os.Args[0])
 }
 
